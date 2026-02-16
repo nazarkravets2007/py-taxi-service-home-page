@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    <div class="sidebar">
+   <div class="sidebar">
+    {% block sidebar %}
         {% include 'includes/sidebar.html' %}
-    </div>
+    {% endblock %}
+</div>
 
     <div class="content">
         {% block content %}{% endblock %}
